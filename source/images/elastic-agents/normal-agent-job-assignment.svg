@@ -1,18 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<svg id="drawing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="background: url('grid.png');" width="700" height="500">
-  <text id="loading" font-family="Helvetica, Arial, sans-serif" x="10" y="10">Loading ...</text>
-  <g id="start">
-    <rect width="95" height="30" x="20" y="20" rx="6" ry="6" fill="#5cda5c"/>
-    <text x="25" y="40">Click to start</text>
-  </g>
-
-  <script type="text/javascript" xlink:href="//cdnjs.cloudflare.com/ajax/libs/svg.js/1.0.1/svg.min.js"></script>
-  <script type="text/javascript" xlink:href="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script type="text/javascript" xlink:href="velocity-1.2.2-with-patch.js"></script>
-  <script type="text/javascript" xlink:href="//cdn.jsdelivr.net/tweene/latest/tweene-velocity.min.js"></script>
-  <script type="text/javascript" xlink:href="go-common.js"></script>
-  <script type="text/javascript">
-  <![CDATA[
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="drawing" width="700" height="500" version="1.1" style="background:url(grid.png)"><text id="loading" x="10" y="10" font-family="Helvetica, Arial, sans-serif">Loading ...</text><g id="start"><rect width="95" height="30" x="20" y="20" fill="#5cda5c" rx="6" ry="6"/><text x="25" y="40">Click to start</text></g><script type="text/javascript" xlink:href="//cdnjs.cloudflare.com/ajax/libs/svg.js/1.0.1/svg.min.js"/><script type="text/javascript" xlink:href="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"/><script type="text/javascript" xlink:href="velocity-1.2.2-with-patch.js"/><script type="text/javascript" xlink:href="//cdn.jsdelivr.net/tweene/latest/tweene-velocity.min.js"/><script type="text/javascript" xlink:href="go-common.js"/><script type="text/javascript"><![CDATA[
     $('#loading').remove();
     var draw = SVG('drawing').size(700, 500).fixSubPixelOffset();
     var arrowHead = draw.marker(8, 8, function(add) { add.path("M0,0 V4 L8,2 Z") }).ref(0.1, 2);
@@ -92,6 +78,4 @@
       timeline.restart();
       $("#start").hide();
     });
-  ]]>
-  </script>
-</svg>
+  ]]></script></svg>
